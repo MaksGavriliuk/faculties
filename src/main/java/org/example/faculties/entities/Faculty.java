@@ -27,10 +27,10 @@ public class Faculty {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name", nullable = false)
+    @Column(name = "name")
     private String name;
 
-    @Column(name = "dean_id", nullable = false)
+    @Column(name = "dean_id")
     private Long deanId;
 
 }
