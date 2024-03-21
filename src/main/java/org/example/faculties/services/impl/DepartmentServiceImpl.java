@@ -57,5 +57,11 @@ public class DepartmentServiceImpl implements DepartmentService {
         Department savedDepartment = departmentRepository.save(department);
         return departmentMapper.toDepartmentDTO(savedDepartment);
     }
-    
+
+    @Override
+    public Page<DepartmentDTO> findDepartmentsByFacultyName(String facultyName, Pageable pageable) {
+        return departmentRepository.findDepartmentsByFacultyName(facultyName, pageable)
+                .map(departmentMapper::toDepartmentDTO);
+    }
+
 }

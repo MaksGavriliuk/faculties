@@ -18,6 +18,6 @@ public interface DepartmentService {
 
     DepartmentDTO updateDepartment(long id, DepartmentDTO departmentDTO);
 
-    Page<DepartmentDTO> findDepartmentsByFacultyName(String facultyName);
+    Page<DepartmentDTO> findDepartmentsByFacultyName(String facultyName, Pageable pageable);
 
 }
