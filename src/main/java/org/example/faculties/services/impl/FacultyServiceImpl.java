@@ -32,6 +32,11 @@ public class FacultyServiceImpl implements FacultyService {
     }
 
     @Override
+    public FacultyDTO getFacultyDTOById(long id) {
+        return facultyMapper.toFacultyDTO(findFacultyById(id));
+    }
+
+    @Override
     public void deleteFacultyById(long id) {
         facultyRepository.deleteById(id);
     }

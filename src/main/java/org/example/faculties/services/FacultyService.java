@@ -12,6 +12,8 @@ public interface FacultyService {
 
     Faculty findFacultyById(long id);
 
+    FacultyDTO getFacultyDTOById(long id);
+
     void deleteFacultyById(long id);
 
     FacultyDTO saveFaculty(FacultyDTO facultyDTO);
