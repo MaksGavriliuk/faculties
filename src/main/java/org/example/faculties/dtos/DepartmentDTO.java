@@ -1,5 +1,6 @@
 package org.example.faculties.dtos;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotNull;
 
