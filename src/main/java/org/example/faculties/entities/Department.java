@@ -34,7 +34,7 @@ public class Department {
     private String name;
 
     @ManyToOne
-    @MapsId("faculty_id")
+    @JoinColumn(name = "faculty_id")
     private Faculty faculty;
 
 }
