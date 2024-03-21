@@ -36,6 +36,11 @@ public class DepartmentServiceImpl implements DepartmentService {
     }
 
     @Override
+    public DepartmentDTO getDepartmentDTOById(long id) {
+        return departmentMapper.toDepartmentDTO(findDepartmentById(id));
+    }
+
+    @Override
     public void deleteDepartmentById(long id) {
         departmentRepository.deleteById(id);
     }
